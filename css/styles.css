@@ -264,6 +264,10 @@ img {
     padding-top: 58px;
 }
 
+.info__child-wrapper:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 .info__child-wrapper {
     display: flex;
     justify-content: space-between;
@@ -278,7 +282,6 @@ img {
 
 .info__child {
     width: 445px;
-    margin-bottom: 32px;
     color: var(--text-color);
 }
 
@@ -293,4 +296,121 @@ img {
     margin-bottom: 0;
     font-size: 15px;
     line-height: 25px;
+}
+
+/* TEAM */
+.team {
+    background-color: #004047;
+    background-image: url("../img/team-bg-top.svg"),
+        url("../img/team-bg-bottom.svg");
+    background-position: calc(50% - 645px) 0,
+        calc(50% + 620px) 641px;
+    background-repeat: no-repeat;
+}
+
+.team__container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    color: var(--text-color);
+}
+
+.team__title {
+    margin-top: 0;
+    margin-bottom: 56px;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    width: 947px; /* width: 932px; lekin bunda sig'mayapti 2 qatorga*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team__title-blue {
+    color: #79C8C7;
+}
+
+.team__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__item {
+    background-image: url("../img/team-item-bg.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 36px;
+    padding-bottom: 11px;
+}
+
+.team__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team__text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.team__name {
+    color: #79C8C7;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.team__info {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    font-style: italic;
+}
+
+.team__img {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+/* CONTACT */
+.contact {
+    background-color: var(--red-color);
+    background-image: url("../img/contact-bg.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 618px) 63px;
+}
+
+.contact__container {
+    max-width: 957px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 76px;
+    padding-bottom: 76px;
+}
+
+.contact__title {
+    color: #012F34;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 260px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.contact__btn {
+    --text-color: #012F34;
+    color: #012F34;
 }
